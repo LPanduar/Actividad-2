@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi presentacion</title>
+</head>
+<body>
+    <h1>Mi presentacion</h1>
+    <h2>Fotografia</h2>
+    <img src="YOP.jpg" alt="Un guapo :3">
+
+    <h2>Nombre</h2>
+    <p>Raul Armando Balam Salaya</p>
+
+    <h2>Edad</h2>
+    <p>18</p>
+
+    <h2>Acerca de mí</h2>
+    <p>Pasar el rato con compañía me agrada, disfruto mucho de la música y de los videojuegos, me gustan los doramas, anime entre otras cosas. Me gusta cualquier todo tipo de música :3</p>
+
+    <h2>Mis comidad favoritas</h2>
+    <p>Pizza, Hamburguesa, Sopa instantanea y Tortita de papa con chorizo :3</p>
+
+    <h2>Mis artistas y bandas músicales favoritos</h2>
+    <p>IMASE("EL mas lindo del mundo"), BTS 0//////0</p>
+
+    <h3>Si desea saber más de mi, deja tus datos y yo te contactare</h3>
+
+    <h1>Formulario de contacto</h1>
+    <form action="/enviarDatos" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <label for="celular">Celular:</label><br>
+        <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" required><br>
+
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" min="18" required><br>
+
+        <label for="correo">Correo:</label><br>
+        <input type="email" id="correo" name="correo" required><br>
+
+        <label for="pregunta">¿Que quieres saber?:</label><br>
+        <textarea id="pregunta" name="pregunta" rows="4" cols="50"></textarea>><br>
+
+        <button type="submit">Contactar</button>
+    </form>
+</body>
+</html>
